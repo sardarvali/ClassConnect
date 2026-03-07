@@ -88,7 +88,7 @@ class Login : AppCompatActivity() {
                 if (task.isSuccessful) {
                     val user = auth.currentUser
                     if (user != null && user.isEmailVerified) {
-                           Toast.makeText(this, "Welcome to ClassConnect!", Toast.LENGTH_SHORT).show()
+                               Toast.makeText(this, "Welcome to ClassConnect!", Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this, MainActivity::class.java))
                         finish()
                     } else {
