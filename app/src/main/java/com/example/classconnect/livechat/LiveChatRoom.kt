@@ -16,7 +16,6 @@ class LiveChatRoom : AppCompatActivity() {
     lateinit var recyclerView: RecyclerView
     lateinit var etMessage: EditText
     lateinit var btnSend: MaterialButton
-
     lateinit var adapter: ChatAdapter
     val messageList = ArrayList<ChatModel>()
 

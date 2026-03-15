@@ -1,6 +1,8 @@
 package com.example.classconnect
 
+import android.app.Activity.OVERRIDE_TRANSITION_OPEN
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
@@ -62,7 +64,7 @@ class Signup: AppCompatActivity() {
 
                     val user = auth.currentUser
                     val profileUpdates = com.google.firebase.auth.UserProfileChangeRequest.Builder()
-                        .setDisplayName(name)   // ⭐ SAVE FULL NAME
+                        .setDisplayName(name)
                         .build()
 
                     user?.updateProfile(profileUpdates)?.addOnCompleteListener {
@@ -88,3 +90,4 @@ class Signup: AppCompatActivity() {
             }
     }
 }
+

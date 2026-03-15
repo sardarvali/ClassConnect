@@ -50,7 +50,6 @@ class Login : AppCompatActivity() {
         }
 
         signupLink.setOnClickListener {
-            // Navigate to your Signup Activity
             startActivity(Intent(this, Signup::class.java))
         }
 
@@ -66,7 +65,6 @@ class Login : AppCompatActivity() {
                     val user = auth.currentUser
                     if (user != null && user.isEmailVerified) {
                         Toast.makeText(this, "Welcome to ClassConnect!", Toast.LENGTH_SHORT).show()
-                        // Replace MainActivity with your home screen
                         startActivity(Intent(this, MainActivity::class.java))
                         finish()
                     } else {
