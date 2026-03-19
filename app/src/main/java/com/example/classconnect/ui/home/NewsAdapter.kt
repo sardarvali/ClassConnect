@@ -1,0 +1,38 @@
+package com.syed.classconnect.ui.home
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+import com.syed.classconnect.data.model.NewsArticle
+import com.syed.classconnect.databinding.ItemNewsBinding
+import com.syed.classconnect.util.loadImage
+
+/** Horizontal news-card adapter for the teacher home screen. */
+class NewsAdapter(
+    private val onClick: (NewsArticle) -> Unit
+) : ListAdapter<NewsArticle, NewsAdapter.VH>(DIFF) {
+
+    inner class VH(private val b: ItemNewsBinding) : RecyclerView.ViewHolder(b.root) {
+        fun bind(article: NewsArticle) {
+            b.tvHeadline.text = article.title
+            b.tvSource.text   = article.source.name
+            b.ivNewsImage.loadImage(article.urlToImage)
+            b.root.setOnClickListener { onClick(article) }
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
+        VH(ItemNewsBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+
+    override fun onBindViewHolder(holder: VH, position: Int) = holder.bind(getItem(position))
+
+    companion object {
+        private val DIFF = object : DiffUtil.ItemCallback<NewsArticle>() {
+            override fun areItemsTheSame(a: NewsArticle, b: NewsArticle) = a.url == b.url
+            override fun areContentsTheSame(a: NewsArticle, b: NewsArticle) = a == b
+        }
+    }
+}
+
