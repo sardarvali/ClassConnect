@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.syed.classconnect.ui.auth.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_login_to_forgot"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_login_to_emailVerificationWait"
+            app:destination="@id/emailVerificationWaitFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.syed.classconnect.ui.auth.RegisterFragment"
+        android:label="Register">
+        <action
+            android:id="@+id/action_register_to_pending"
+            app:destination="@id/pendingApprovalFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/pop_fade_in"
+            app:popExitAnim="@anim/pop_fade_out" />
+        <action
+            android:id="@+id/action_register_to_emailVerificationWait"
+            app:destination="@id/emailVerificationWaitFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true"
+            app:popEnterAnim="@anim/pop_fade_in"
+            app:popExitAnim="@anim/pop_fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.syed.classconnect.ui.auth.ForgotPasswordFragment"
+        android:label="Forgot Password" />
+
+    <fragment
+        android:id="@+id/pendingApprovalFragment"
+        android:name="com.syed.classconnect.ui.auth.PendingApprovalFragment"
+        android:label="Pending Approval" />
+
+    <fragment
+        android:id="@+id/emailVerificationWaitFragment"
+        android:name="com.syed.classconnect.ui.auth.EmailVerificationWaitFragment"
+        android:label="Verify Email"
+        tools:layout="@layout/fragment_email_verification_wait" />
+
+</navigation>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_premium">
+
+    <View
+        android:layout_width="420dp"
+        android:layout_height="420dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-120dp"
+        android:layout_marginEnd="-120dp"
+        android:alpha="0.55"
+        android:tag="splash_glow_primary"
+        android:background="@drawable/bg_glow_blue" />
+
+    <View
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="-120dp"
+        android:layout_marginBottom="-120dp"
+        android:alpha="0.35"
+        android:rotation="180"
+        android:tag="splash_glow_secondary"
+        android:background="@drawable/bg_glow_blue" />
+
+    <LinearLayout
+        android:id="@+id/splash_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/space_6">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_5"
+            android:tag="splash_glass_card"
+            app:cardBackgroundColor="@color/premium_glass_fill"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/premium_glass_stroke"
+            app:strokeWidth="1dp">
+
+            <FrameLayout
+                android:layout_width="176dp"
+                android:layout_height="176dp"
+                android:tag="splash_logo_halo"
+                android:foreground="?attr/selectableItemBackground">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_logo_circle"
+                    android:alpha="0.9" />
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="118dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:padding="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo"
+                    android:tag="splash_icon" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:text="@string/app_name"
+            android:textColor="@color/text_primary"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:alpha="0"
+            android:paddingHorizontal="@dimen/space_3"
+            android:text="@string/app_tagline"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:tag="splash_version_badge"
+            app:cardBackgroundColor="@color/premium_chip_fill"
+            app:cardCornerRadius="999dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/premium_glass_stroke"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="8dp"
+                android:text="@string/splash_version_text"
+                android:textColor="@color/brand_primary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/space_4"
+    android:layout_marginVertical="@dimen/space_1"
+    android:foreground="?attr/selectableItemBackground"
+
+    app:cardBackgroundColor="@color/bg_surface"
+    app:cardCornerRadius="@dimen/radius_large"
+    app:strokeColor="@color/border_subtle"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_3">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/space_3"
+            android:contentDescription="@string/user_avatar"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/border_subtle"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_base"
+                android:textStyle="bold"
+                tools:text="Student Name" />
+
+            <!-- tv_student_id kept for adapter compatibility (hidden, same as name) -->
+            <TextView
+                android:id="@+id/tv_student_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_1"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/text_xs"
+                android:visibility="gone"
+                tools:text="student_id_123" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_1"
+                android:textColor="@color/brand_primary"
+                android:textSize="@dimen/text_sm"
+                android:textStyle="bold"
+                tools:text="18 / 20" />
+
+            <TextView
+                android:id="@+id/tv_submitted_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_1"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/text_xs"
+                tools:text="2 days ago" />
+        </LinearLayout>
+
+        <!-- tv_percentage as a chip for colour-coding -->
+        <TextView
+            android:id="@+id/tv_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tag_success"
+            android:paddingHorizontal="@dimen/space_2"
+            android:paddingVertical="@dimen/space_1"
+            android:textColor="@color/semantic_success"
+            android:textSize="@dimen/text_sm"
+            android:textStyle="bold"
+            tools:text="90%" />
+
+        <!-- chip_grade kept for backwards compat, hidden -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_xs"
+            android:visibility="gone"
+            app:chipCornerRadius="@dimen/radius_small"
+            app:chipMinHeight="30dp"
+            tools:text="90%" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

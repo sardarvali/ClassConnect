@@ -1,0 +1,101 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null && (request.auth.uid == userId || isAdmin());
+      allow delete: if isAdmin();
+    }
+
+    match /institutions/{instId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.resource.data.adminId == request.auth.uid;
+      allow update, delete: if request.auth != null && resource.data.adminId == request.auth.uid;
+    }
+
+    match /classes/{classId} {
+      allow read: if request.auth != null;
+      allow create: if isTeacherOrAdmin();
+      allow update: if request.auth != null && (resource.data.teacherId == request.auth.uid || isAdmin() || isStudentJoining());
+      allow delete: if isAdmin();
+
+      match /announcements/{docId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow write: if isTeacherOrAdmin();
+      }
+
+      match /materials/{docId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow write: if isTeacherOrAdmin();
+      }
+
+      match /assignments/{assignmentId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow create, update, delete: if isTeacherOrAdmin();
+
+        match /submissions/{studentId} {
+          allow read: if request.auth.uid == studentId || isTeacherOrAdmin();
+          allow create, update: if request.auth.uid == studentId || isTeacherOrAdmin();
+          allow delete: if isTeacherOrAdmin();
+        }
+      }
+
+      match /quizzes/{quizId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow create, update, delete: if isTeacherOrAdmin();
+
+        match /attempts/{studentId} {
+          allow read: if request.auth.uid == studentId || isTeacherOrAdmin();
+          allow create: if request.auth.uid == studentId;
+          allow update: if request.auth.uid == studentId;
+          allow delete: if isTeacherOrAdmin();
+        }
+      }
+
+      match /attendance/{date} {
+        allow read: if isMemberOrTeacher(classId);
+        allow create: if isTeacherOrAdmin();
+        allow update: if request.auth != null;
+        allow delete: if isTeacherOrAdmin();
+      }
+
+      match /chat/{messageId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow create: if request.auth != null;
+        allow update: if request.auth.uid == resource.data.senderId || isTeacherOrAdmin();
+        allow delete: if request.auth.uid == resource.data.senderId || isTeacherOrAdmin();
+      }
+    }
+
+    match /notifications/{userId}/items/{notifId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return request.auth != null &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    function isTeacherOrAdmin() {
+      let role = get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+      return request.auth != null && (role == 'teacher' || role == 'admin');
+    }
+
+    function isMemberOrTeacher(classId) {
+      let cls = get(/databases/$(database)/documents/classes/$(classId)).data;
+      return request.auth != null && (
+        request.auth.uid in cls.studentIds ||
+        cls.teacherId == request.auth.uid ||
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin'
+      );
+    }
+
+    function isStudentJoining() {
+      // allow update if the only change is adding themselves to studentIds
+      return request.auth != null &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['studentIds']);
+    }
+  }
+}

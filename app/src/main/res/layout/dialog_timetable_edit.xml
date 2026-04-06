@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ClassConnect.Dialog.Content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_6">
+
+    <!-- Handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_3"
+        android:background="@color/border_subtle" />
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_6"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_marginBottom="@dimen/space_2"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_md"
+        android:textStyle="bold" />
+
+    <!-- Start time label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_6"
+        android:layout_marginTop="@dimen/space_4"
+        android:text="Start Time"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_base"
+        android:textStyle="bold" />
+
+    <TimePicker
+        android:id="@+id/startTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:descendantFocusability="blocksDescendants"
+        android:timePickerMode="spinner" />
+
+    <!-- End time label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_6"
+        android:layout_marginTop="8dp"
+        android:text="End Time"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_base"
+        android:textStyle="bold" />
+
+    <TimePicker
+        android:id="@+id/endTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:descendantFocusability="blocksDescendants"
+        android:timePickerMode="spinner" />
+
+    <TextView
+        android:id="@+id/tvTimeError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_6"
+        android:layout_marginTop="@dimen/space_1"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/semantic_error"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddAppend"
+        style="@style/ClassConnect.Button.Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Add Another Session"
+        android:visibility="gone" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_2"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/space_4">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/ClassConnect.Button.Outlined.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_2"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirm"
+            style="@style/ClassConnect.Button.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Set Time"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

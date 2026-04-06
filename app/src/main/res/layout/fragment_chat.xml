@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:paddingHorizontal="@dimen/space_1"
+        android:paddingVertical="@dimen/space_2"
+        app:layout_constraintBottom_toTopOf="@id/input_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Scroll to bottom FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_scroll_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_3"
+        android:contentDescription="@string/scroll_to_latest_message"
+        android:src="@drawable/ic_download"
+        android:visibility="gone"
+        app:backgroundTint="@color/bg_surface_raised"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@id/input_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/brand_primary" />
+
+    <!-- Input bar -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_3"
+        android:layout_marginBottom="@dimen/space_2"
+        app:cardBackgroundColor="?attr/colorSurface"
+        app:cardCornerRadius="@dimen/radius_xlarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="?attr/colorOutline"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/space_4"
+            android:paddingVertical="@dimen/space_1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="top|start"
+                android:hint="@string/type_message"
+                android:maxLines="4"
+                android:minHeight="@dimen/button_height"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurfaceVariant"
+                android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_send"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_brand_button"
+                android:contentDescription="@string/send_message"
+                android:padding="0dp"
+                android:text=""
+                app:icon="@drawable/ic_send"
+                app:iconPadding="0dp"
+                app:iconTint="@color/white"
+                app:backgroundTint="@color/brand_primary" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

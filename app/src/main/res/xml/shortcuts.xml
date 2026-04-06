@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_ai"
+        android:shortcutId="ai_buddy"
+        android:shortcutLongLabel="@string/ai_buddy"
+        android:shortcutShortLabel="@string/ai_buddy">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="classconnect://ai_buddy"
+            android:targetClass="com.syed.classconnect.ui.main.MainActivity"
+            android:targetPackage="com.syed.classconnect" />
+    </shortcut>
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_classes"
+        android:shortcutId="my_classes"
+        android:shortcutLongLabel="@string/my_classes"
+        android:shortcutShortLabel="@string/my_classes">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="classconnect://classes"
+            android:targetClass="com.syed.classconnect.ui.main.MainActivity"
+            android:targetPackage="com.syed.classconnect" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/space_8">
+
+        <!-- Lottie animation -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_email"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/space_8"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/email_sending" />
+
+        <!-- Heading -->
+        <TextView
+            style="@style/ClassConnect.Text.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_6"
+            android:text="@string/email_verify_heading" />
+
+        <!-- Subtext -->
+        <TextView
+            android:id="@+id/tv_subtext"
+            style="@style/ClassConnect.Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_3"
+            android:gravity="center"
+            android:text="@string/email_verify_heading" />
+
+        <!-- Email chip / highlighted card -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/ClassConnect.Surface.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            app:cardBackgroundColor="@color/bg_surface_raised"
+            app:cardCornerRadius="@dimen/radius_xlarge"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tv_email_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/space_5"
+                android:paddingVertical="@dimen/space_2"
+                android:textColor="@color/brand_primary"
+                android:textSize="@dimen/text_base"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Polling status -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progress_polling"
+                style="@style/Widget.Material3.CircularProgressIndicator.ExtraSmall"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/space_2"
+                app:indicatorColor="@color/brand_primary"
+                app:indicatorSize="20dp"
+                app:trackCornerRadius="2dp"
+                app:trackThickness="2dp" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verification_checking"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_sm" />
+        </LinearLayout>
+
+        <!-- Open Email App button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_open_email_app"
+            style="@style/ClassConnect.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:text="@string/open_email_app" />
+
+        <!-- Resend Email button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_resend_email"
+            style="@style/ClassConnect.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:enabled="false"
+            android:text="@string/resend_email" />
+
+        <!-- Wrong email link -->
+        <TextView
+            android:id="@+id/tv_wrong_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_marginBottom="@dimen/space_8"
+            android:padding="@dimen/space_3"
+            android:text="@string/wrong_email"
+            android:textColor="@color/brand_primary"
+            android:textSize="@dimen/text_base" />
+
+    </LinearLayout>
+</ScrollView>

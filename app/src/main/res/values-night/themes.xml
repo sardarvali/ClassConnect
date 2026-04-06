@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.ClassConnect" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/text_on_brand</item>
+        <item name="colorPrimaryContainer">@color/bg_surface_raised</item>
+        <item name="colorOnPrimaryContainer">@color/text_primary</item>
+        <item name="colorSecondary">@color/brand_accent</item>
+        <item name="colorSurface">@color/bg_surface</item>
+        <item name="colorSurfaceContainer">@color/premium_surface_tint</item>
+        <item name="colorSurfaceVariant">@color/bg_surface_raised</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutlineVariant">@color/border_subtle</item>
+        <item name="android:colorBackground">@color/bg_base</item>
+        <item name="android:windowBackground">@drawable/bg_screen_premium</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorError">@color/semantic_error</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialButtonStyle">@style/ClassConnect.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/ClassConnect.Button.Outlined</item>
+        <item name="materialCardViewStyle">@style/ClassConnect.CardView</item>
+        <item name="textInputStyle">@style/ClassConnect.TextInputLayout</item>
+        <item name="bottomNavigationStyle">@style/ClassConnect.BottomNav</item>
+        <item name="toolbarStyle">@style/ClassConnect.Toolbar</item>
+        <item name="materialSwitchStyle">@style/ClassConnect.Switch</item>
+        <item name="radioButtonStyle">@style/ClassConnect.Radio</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.ClassConnect.AlertDialog</item>
+        <item name="chipStyle">@style/ClassConnect.Chip</item>
+        <item name="cardViewStyle">@style/ClassConnect.CardView</item>
+        <item name="shapeAppearanceSmallComponent">@style/ClassConnect.Shape.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ClassConnect.Shape.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ClassConnect.Shape.Large</item>
+        <item name="textAppearanceTitleLarge">@style/ClassConnect.Text.Title</item>
+        <item name="textAppearanceBodyLarge">@style/ClassConnect.Text.Body</item>
+        <item name="bottomSheetDialogTheme">@style/ClassConnect.BottomSheetDialog</item>
+    </style>
+</resources>
