@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/studentHomeFragment">
+
+    <fragment
+        android:id="@+id/studentHomeFragment"
+        android:name="com.syed.classconnect.ui.home.StudentHomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_global_notifications"
+            app:destination="@id/notificationsFragment"
+            app:enterAnim="@anim/fade_scale_in"
+            app:exitAnim="@anim/fade_scale_out"
+            app:popEnterAnim="@anim/fade_scale_in"
+            app:popExitAnim="@anim/fade_scale_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/teacherHomeFragment"
+        android:name="com.syed.classconnect.ui.home.TeacherHomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_teacher_to_lessonPlanner"
+            app:destination="@id/lessonPlannerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminDashboardFragment"
+        android:name="com.syed.classconnect.ui.admin.AdminDashboardFragment"
+        android:label="Dashboard">
+        <action
+            android:id="@+id/action_adminDashboard_to_roleChangeHistory"
+            app:destination="@id/roleChangeHistoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/roleChangeHistoryFragment"
+        android:name="com.syed.classconnect.ui.admin.RoleChangeHistoryFragment"
+        android:label="Role Change History"
+        tools:layout="@layout/fragment_role_change_history" />
+
+    <fragment
+        android:id="@+id/classListFragment"
+        android:name="com.syed.classconnect.ui.classes.ClassListFragment"
+        android:label="My Classes" />
+
+    <fragment
+        android:id="@+id/aiBuddyFragment"
+        android:name="com.syed.classconnect.ui.ai.AIBuddyFragment"
+        android:label="AI Buddy" />
+
+    <fragment
+        android:id="@+id/lessonPlannerFragment"
+        android:name="com.syed.classconnect.ui.ai.LessonPlannerFragment"
+        android:label="Lesson Planner" />
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.syed.classconnect.ui.notifications.NotificationsFragment"
+        android:label="Notifications" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.syed.classconnect.ui.profile.ProfileFragment"
+        android:label="Profile">
+        <action
+            android:id="@+id/action_profile_to_settings"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userManagementFragment"
+        android:name="com.syed.classconnect.ui.admin.UserManagementFragment"
+        android:label="Users">
+        <action
+            android:id="@+id/action_userManagement_to_userDetail"
+            app:destination="@id/userDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/pop_slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.syed.classconnect.ui.admin.UserDetailFragment"
+        android:label="User Detail"
+        tools:layout="@layout/fragment_user_detail">
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminClassesFragment"
+        android:name="com.syed.classconnect.ui.admin.AdminClassesFragment"
+        android:label="Classes" />
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.syed.classconnect.ui.onboarding.OnboardingFragment"
+        android:label="Onboarding" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.syed.classconnect.ui.profile.SettingsFragment"
+        android:label="Settings" />
+
+</navigation>

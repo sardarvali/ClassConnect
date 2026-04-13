@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Premium pop animation: slide in from left + fade for returning from right-slide layers -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:duration="300"
+        android:fromXDelta="100%"
+        android:interpolator="@interpolator/ease_in_out"
+        android:toXDelta="0%" />
+    <alpha
+        android:duration="250"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+</set>
+
+

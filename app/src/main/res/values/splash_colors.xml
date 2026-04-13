@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_primary_purple">#6650A4</color>
+    <color name="splash_node_purple">#7F77DD</color>
+    <color name="splash_lavender">#D0BCFF</color>
+    <color name="splash_blue_accent">#A8C7FA</color>
+    <color name="splash_green_accent">#9FE1CB</color>
+    <color name="splash_pink_accent">#F2B8EB</color>
+    <color name="splash_light_purple">#B69DF8</color>
+    <color name="splash_surface">#E8DEF8</color>
+    <color name="splash_background">#0D0B14</color>
+</resources>
+

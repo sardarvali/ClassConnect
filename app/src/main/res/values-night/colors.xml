@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode overrides — surfaces stay dark, text stays light -->
+    <color name="bg_base">#0A0E1A</color>
+    <color name="bg_surface">#111827</color>
+    <color name="bg_surface_raised">#1A2235</color>
+    <color name="bg_surface_overlay">#1F2D45</color>
+    <color name="bg_input">#141E30</color>
+
+    <color name="text_primary">#F0F4FF</color>
+    <color name="text_secondary">#8A9DC0</color>
+    <color name="text_hint">#4A5A78</color>
+
+    <color name="border_subtle">#1E2D45</color>
+    <color name="border_default">#253450</color>
+
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_90">#E6FFFFFF</color>
+
+    <color name="premium_surface_tint">#121D32</color>
+    <color name="premium_overlay_blue">#264FC3F7</color>
+    <color name="premium_overlay_orange">#26FFB74D</color>
+    <color name="premium_overlay_green">#26A5D6AA</color>
+    <color name="premium_tint_blue">#72D7FF</color>
+    <color name="premium_tint_orange">#FFC86D</color>
+    <color name="premium_tint_green">#B9E7BE</color>
+    <color name="premium_tint_purple">#C08BFF</color>
+    <color name="premium_bg_top">#0A1224</color>
+    <color name="premium_bg_bottom">#0E182B</color>
+    <color name="premium_glass_fill">#18243A</color>
+    <color name="premium_glass_stroke">#2A3A58</color>
+    <color name="premium_chip_fill">#1E2B45</color>
+
+    <!-- ── SEMANTIC COLORS (Dark Mode) ─────────────── -->
+    <color name="semantic_success_container">#1B5E3F</color>
+    <color name="semantic_success_on_container">#B3F7D6</color>
+    <color name="semantic_warning_container">#663D00</color>
+    <color name="semantic_warning_on_container">#FFD699</color>
+    <color name="semantic_error_container">#661B3F</color>
+    <color name="semantic_error_on_container">#FFB3CC</color>
+    <color name="semantic_info_container">#153399</color>
+    <color name="semantic_info_on_container">#B3D9FF</color>
+
+    <!-- ── ASSIGNMENT STATUS COLORS (Dark Mode) ─────────────── -->
+    <color name="deadline_today">#FFD699</color>
+    <color name="deadline_soon">#FFC266</color>
+    <color name="deadline_upcoming">#6DB3FF</color>
+    <color name="deadline_later">#99E6B8</color>
+
+    <!-- ── QUIZ PERFORMANCE COLORS (Dark Mode) ─────────────── -->
+    <color name="quiz_excellent">#99E6B8</color>
+    <color name="quiz_good">#6DB3FF</color>
+    <color name="quiz_fair">#FFD699</color>
+    <color name="quiz_poor">#FFB3CC</color>
+
+    <!-- ── PURE BLACK OLED OPTION ─────────────── -->
+    <!-- Uncomment to enable pure black backgrounds for OLED energy efficiency -->
+    <!-- <color name="bg_base">#000000</color> -->
+    <!-- <color name="bg_surface">#0A0A0A</color> -->
+    <!-- <color name="bg_surface_raised">#141414</color> -->
+
+    <color name="background">#0A0E1A</color>
+    <color name="surface">#111827</color>
+    <color name="surface_variant">#1A2235</color>
+</resources>

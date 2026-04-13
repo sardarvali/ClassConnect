@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base app theme -->
+    <style name="Theme.ClassConnect" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/text_on_brand</item>
+        <item name="colorPrimaryContainer">@color/bg_surface_raised</item>
+        <item name="colorOnPrimaryContainer">@color/text_primary</item>
+        <item name="colorSecondary">@color/brand_accent</item>
+        <item name="colorOnSecondary">@color/text_on_brand</item>
+        <item name="colorSurface">@color/bg_surface</item>
+        <item name="colorSurfaceContainer">@color/premium_surface_tint</item>
+        <item name="colorSurfaceVariant">@color/bg_surface_raised</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutlineVariant">@color/border_subtle</item>
+        <item name="android:colorBackground">@color/bg_base</item>
+        <item name="android:windowBackground">@drawable/bg_screen_premium</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOutline">@color/border_default</item>
+        <item name="colorError">@color/semantic_error</item>
+        <item name="android:windowAnimationStyle">@style/ClassConnect.WindowAnimation</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="materialButtonStyle">@style/ClassConnect.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/ClassConnect.Button.Outlined</item>
+        <item name="materialCardViewStyle">@style/ClassConnect.CardView</item>
+        <item name="textInputStyle">@style/ClassConnect.TextInputLayout</item>
+        <item name="bottomNavigationStyle">@style/ClassConnect.BottomNav</item>
+        <item name="toolbarStyle">@style/ClassConnect.Toolbar</item>
+        <item name="materialSwitchStyle">@style/ClassConnect.Switch</item>
+        <item name="radioButtonStyle">@style/ClassConnect.Radio</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.ClassConnect.AlertDialog</item>
+        <item name="chipStyle">@style/ClassConnect.Chip</item>
+        <item name="cardViewStyle">@style/ClassConnect.CardView</item>
+        <item name="shapeAppearanceSmallComponent">@style/ClassConnect.Shape.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ClassConnect.Shape.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ClassConnect.Shape.Large</item>
+        <item name="textAppearanceTitleLarge">@style/ClassConnect.Text.Title</item>
+        <item name="textAppearanceBodyLarge">@style/ClassConnect.Text.Body</item>
+        <item name="bottomSheetDialogTheme">@style/ClassConnect.BottomSheetDialog</item>
+    </style>
+
+    <!-- Splash theme -->
+    <style name="Theme.ClassConnect.Splash" parent="Theme.ClassConnect">
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/splash_background</item>
+        <item name="android:navigationBarColor">@color/splash_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Immersive theme for quiz attempt -->
+    <style name="Theme.ClassConnect.Immersive" parent="Theme.ClassConnect">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Window animation -->
+    <style name="ClassConnect.WindowAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- ── COMPONENT STYLES ───────────────────── -->
+
+    <style name="ClassConnect.Button" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="backgroundTint">@color/brand_primary</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:stateListAnimator">@animator/button_state_animator</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <style name="ClassConnect.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="strokeColor">@color/border_focus</item>
+        <item name="strokeWidth">1.25dp</item>
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:stateListAnimator">@animator/button_state_animator</item>
+    </style>
+
+    <style name="ClassConnect.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ClassConnect.Button.Tonal" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_pill</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/premium_chip_fill</item>
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:stateListAnimator">@animator/button_state_animator</item>
+    </style>
+
+    <style name="ClassConnect.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_medium</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_medium</item>
+        <item name="boxStrokeColor">@color/text_input_stroke_color</item>
+        <item name="boxBackgroundColor">@color/bg_input</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:minHeight">@dimen/input_height</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+    </style>
+
+    <style name="ClassConnect.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="itemIconTint">@color/bottom_nav_icon_color</item>
+        <item name="itemTextColor">@color/bottom_nav_icon_color</item>
+        <item name="itemTextAppearanceActive">@style/ClassConnect.Text.Nav.Active</item>
+        <item name="itemTextAppearanceInactive">@style/ClassConnect.Text.Nav.Inactive</item>
+        <item name="itemRippleColor">@color/ripple_light</item>
+    </style>
+
+    <style name="ClassConnect.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="titleTextAppearance">@style/ClassConnect.Toolbar.Title</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="ClassConnect.Toolbar.Screen" parent="ClassConnect.Toolbar">
+        <item name="android:background">@color/premium_surface_tint</item>
+    </style>
+
+    <style name="ClassConnect.Toolbar.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="ClassConnect.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipCornerRadius">100dp</item>
+        <item name="chipBackgroundColor">@color/chip_bg_color</item>
+        <item name="chipStrokeColor">@color/transparent</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ClassConnect.Chip.Assist" parent="Widget.Material3.Chip.Assist">
+        <item name="chipCornerRadius">@dimen/radius_pill</item>
+        <item name="chipBackgroundColor">@color/semantic_info_surface</item>
+        <item name="android:textColor">@color/brand_primary</item>
+    </style>
+
+    <style name="ClassConnect.Chip.Compact" parent="ClassConnect.Chip.Assist">
+        <item name="chipCornerRadius">@dimen/radius_small</item>
+        <item name="chipMinHeight">28dp</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="ClassConnect.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">6dp</item>
+        <item name="cardBackgroundColor">@color/bg_surface</item>
+        <item name="strokeColor">@color/border_subtle</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="ClassConnect.Surface.Premium" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/premium_glass_fill</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="strokeColor">@color/premium_glass_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+
+    <style name="ClassConnect.Shape.Small" parent="ShapeAppearance.Material3.Corner.Small">
+        <item name="cornerSize">@dimen/radius_small</item>
+    </style>
+
+    <style name="ClassConnect.Shape.Medium" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerSize">@dimen/radius_medium</item>
+    </style>
+
+    <style name="ClassConnect.Shape.Large" parent="ShapeAppearance.Material3.Corner.Large">
+        <item name="cornerSize">@dimen/radius_large</item>
+    </style>
+
+    <style name="ClassConnect.Tab" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <!-- Typography styles -->
+    <style name="ClassConnect.Text.Display" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="ClassConnect.Text.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="ClassConnect.Text.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="ClassConnect.Text.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ClassConnect.Text.Caption" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ClassConnect.Text.Label" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="ClassConnect.Text.Link" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ClassConnect.Text.Nav.Active" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ClassConnect.Text.Nav.Inactive" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ClassConnect.Surface.Section" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardBackgroundColor">@color/bg_surface</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="strokeColor">@color/border_subtle</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="ClassConnect.Surface.ListItem" parent="ClassConnect.Surface.Section">
+        <item name="cardCornerRadius">@dimen/radius_large</item>
+    </style>
+
+    <style name="ClassConnect.Button.Small" parent="ClassConnect.Button">
+        <item name="android:minHeight">36dp</item>
+        <item name="cornerRadius">@dimen/radius_medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ClassConnect.Button.Outlined.Small" parent="ClassConnect.Button.Outlined">
+        <item name="android:minHeight">34dp</item>
+        <item name="cornerRadius">@dimen/radius_small</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ClassConnect.Button.Tonal.Small" parent="ClassConnect.Button.Tonal">
+        <item name="android:minHeight">34dp</item>
+        <item name="cornerRadius">@dimen/radius_small</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="ClassConnect.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="trackTint">@color/text_input_stroke_color</item>
+        <item name="thumbTint">@color/brand_primary</item>
+    </style>
+
+    <style name="ClassConnect.Radio" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="buttonTint">@color/brand_primary</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="ClassConnect.Radio.Row" parent="ClassConnect.Radio">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableEnd">@drawable/ic_radio_selector</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingHorizontal">@dimen/space_4</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Bottom Nav Active Indicator -->
+    <style name="ClassConnect.BottomNav.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/semantic_info_surface</item>
+        <item name="android:width">72dp</item>
+        <item name="android:height">34dp</item>
+        <item name="shapeAppearance">@style/ClassConnect.BottomNav.ActiveIndicator.Shape</item>
+    </style>
+
+    <style name="ClassConnect.BottomNav.ActiveIndicator.Shape" parent="ShapeAppearance.Material3.Corner.Full">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Bottom Sheet Style -->
+    <style name="ClassConnect.BottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="backgroundTint">@color/bg_surface</item>
+        <item name="shapeAppearanceOverlay">@style/ClassConnect.BottomSheet.ShapeOverlay</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="ClassConnect.BottomSheet.ShapeOverlay" parent="">
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ClassConnect.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ClassConnect.BottomSheet</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="ThemeOverlay.ClassConnect.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:windowBackground">@drawable/bg_surface_premium</item>
+    </style>
+
+    <style name="ClassConnect.Dialog.Content" parent="">
+        <item name="android:background">@drawable/bg_surface_premium</item>
+        <item name="android:padding">@dimen/space_5</item>
+    </style>
+
+    <!-- Legacy style aliases for compatibility -->
+    <style name="WindowAnimationStyle" parent="ClassConnect.WindowAnimation" />
+
+    <style name="ClassConnect.Text.SectionLabel" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ClassConnect.Text.SectionTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ClassConnect.Text.EmptyTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ClassConnect.Text.EmptyBody" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+</resources>

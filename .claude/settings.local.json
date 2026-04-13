@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Ls", 
+      "Bash"
+    ]
+  }
+}
