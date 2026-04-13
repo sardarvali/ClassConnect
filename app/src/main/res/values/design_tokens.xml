@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+    <!-- DESIGN TOKENS - Enhanced design system values (supplements existing dimens.xml) -->
+    <!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- ENHANCED SPACING SCALE - Aliases for dimens.xml spacing (space_1 to space_12) -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- Use existing: space_1 (4dp), space_2 (8dp), space_3 (12dp), space_4 (16dp), -->
+    <!-- space_5 (20dp), space_6 (24dp), space_8 (32dp), space_10 (40dp), space_12 (48dp) -->
+
+    <!-- NEW: Alternative naming for modern design systems -->
+    <dimen name="spacing_xs">@dimen/space_1</dimen>
+    <dimen name="spacing_sm">@dimen/space_2</dimen>
+    <dimen name="spacing_md">@dimen/space_3</dimen>
+    <dimen name="spacing_lg">@dimen/space_4</dimen>
+    <dimen name="spacing_xl">@dimen/space_5</dimen>
+    <dimen name="spacing_2xl">@dimen/space_6</dimen>
+    <dimen name="spacing_3xl">@dimen/space_8</dimen>
+    <dimen name="spacing_4xl">@dimen/space_10</dimen>
+    <dimen name="spacing_5xl">@dimen/space_12</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- ENHANCED BORDER RADIUS - New Material 3 scale additions -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- Use existing: radius_small (8dp), radius_medium (14dp), radius_large (20dp), -->
+    <!-- radius_xlarge (28dp), radius_pill (100dp) -->
+
+    <!-- NEW: Additional radius tokens -->
+    <dimen name="radius_xs">4dp</dimen>
+    <dimen name="radius_sm">@dimen/radius_small</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">@dimen/radius_large</dimen>
+    <dimen name="radius_xl">@dimen/radius_xlarge</dimen>
+    <dimen name="radius_2xl">@dimen/radius_xlarge</dimen>
+    <dimen name="radius_full">@dimen/radius_pill</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- ELEVATION / SHADOW DEPTH (Material elevation system) - NEW -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <dimen name="elevation_0">0dp</dimen>
+    <dimen name="elevation_1">2dp</dimen>
+    <dimen name="elevation_2">4dp</dimen>
+    <dimen name="elevation_3">8dp</dimen>
+    <dimen name="elevation_4">12dp</dimen>
+    <dimen name="elevation_5">16dp</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- TOUCH TARGET SIZE (Minimum 48dp x 48dp per Material Design) - NEW -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <dimen name="touch_target_min">48dp</dimen>
+    <dimen name="icon_size_touch">24dp</dimen>
+    <dimen name="icon_padding">12dp</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- TYPOGRAPHY SCALE ENHANCEMENTS - Line height and letter spacing -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- Use existing: text_xs (11sp), text_sm (13sp), text_base (15sp), text_md (17sp), -->
+    <!-- text_lg (20sp), text_xl (24sp), text_2xl (28sp), text_3xl (32sp) -->
+
+    <!-- NEW: Line heights and letter spacing for advanced typography -->
+    <dimen name="text_xs_line_height">16sp</dimen>
+    <dimen name="text_xs_letter_spacing">0sp</dimen>
+
+    <dimen name="text_sm_line_height">18sp</dimen>
+    <dimen name="text_sm_letter_spacing">0.3sp</dimen>
+
+    <dimen name="text_base_line_height">20sp</dimen>
+    <dimen name="text_base_letter_spacing">0.3sp</dimen>
+
+    <dimen name="text_md_line_height">24sp</dimen>
+    <dimen name="text_md_letter_spacing">0.5sp</dimen>
+
+    <dimen name="text_lg_line_height">28sp</dimen>
+    <dimen name="text_lg_letter_spacing">0.5sp</dimen>
+
+    <dimen name="text_xl_line_height">32sp</dimen>
+    <dimen name="text_xl_letter_spacing">0sp</dimen>
+
+    <dimen name="text_2xl_line_height">36sp</dimen>
+    <dimen name="text_2xl_letter_spacing">0sp</dimen>
+
+    <dimen name="text_3xl_line_height">40sp</dimen>
+    <dimen name="text_3xl_letter_spacing">0sp</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- COMPONENT DIMENSIONS - Additional sizes and padding variants -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- Use existing: button_height (52dp), input_height (56dp), bottom_nav_height (64dp), -->
+    <!-- toolbar_height (56dp) -->
+
+    <!-- NEW: Additional button and input sizing -->
+    <dimen name="button_height_small">40dp</dimen>
+    <dimen name="button_height_default">48dp</dimen>
+    <dimen name="button_height_large">56dp</dimen>
+
+    <dimen name="input_padding_h">16dp</dimen>
+    <dimen name="input_padding_v">12dp</dimen>
+
+    <dimen name="card_padding_default">16dp</dimen>
+    <dimen name="card_padding_compact">12dp</dimen>
+    <dimen name="card_padding_comfortable">20dp</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- RESPONSIVE SCREEN PADDING VARIANTS -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- Use existing: screen_padding_h (20dp), screen_padding_v (16dp) -->
+
+    <!-- NEW: Padding variants for different content density -->
+    <dimen name="screen_padding_h_default">20dp</dimen>
+    <dimen name="screen_padding_h_compact">16dp</dimen>
+    <dimen name="screen_padding_h_comfortable">40dp</dimen>
+
+    <dimen name="screen_padding_v_default">16dp</dimen>
+    <dimen name="screen_padding_v_compact">12dp</dimen>
+    <dimen name="screen_padding_v_comfortable">24dp</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- ADDITIONAL AVATAR SIZES - Beyond existing small/medium/large -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- Use existing: avatar_size_small (32dp), avatar_size_medium (48dp), avatar_size_large (72dp) -->
+
+    <!-- NEW: Extended avatar size range -->
+    <dimen name="avatar_xs">24dp</dimen>
+    <dimen name="avatar_sm">@dimen/avatar_size_small</dimen>
+    <dimen name="avatar_md">@dimen/avatar_size_medium</dimen>
+    <dimen name="avatar_lg">@dimen/avatar_size_large</dimen>
+    <dimen name="avatar_xl">96dp</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- ICON SIZING - NEW: Alternative naming to existing icon sizes -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- Use existing: icon_sm (16dp), icon_md (24dp), icon_lg (32dp) -->
+
+    <!-- NEW: Extended icon size range and aliases -->
+    <dimen name="icon_xs">16dp</dimen>
+    <dimen name="icon_sm_alt">20dp</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- STROKE / BORDER WIDTH ENHANCEMENTS -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- Use existing: stroke_default (1dp), stroke_focus (2dp) -->
+
+    <!-- NEW: Extended stroke scale -->
+    <dimen name="stroke_thin">0.5dp</dimen>
+    <dimen name="stroke_medium">2dp</dimen>
+    <dimen name="stroke_thick">3dp</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- ANIMATION DURATIONS (Material Motion standards) - NEW -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <integer name="duration_short">150</integer>
+    <integer name="duration_medium">300</integer>
+    <integer name="duration_long">500</integer>
+    <integer name="duration_extra_long">800</integer>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- NAVIGATION COMPONENT SIZING - NEW: Status bar, navigation insets -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="nav_gesture_bar_height">32dp</dimen>
+
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- RESPONSIVE BREAKPOINTS (Screen size qualifiers) - DOCUMENTATION ONLY -->
+    <!-- ────────────────────────────────────────────────────────────────────────────── -->
+    <!-- width_320dp = Small phones (< 5 inches) -->
+    <!-- width_480dp = Medium phones (5-6 inches) -->
+    <!-- width_600dp = Tablets (7+ inches) -->
+    <!-- width_840dp = Large tablets (10+ inches) -->
+    <!-- Use in: values-w320dp/, values-w600dp/, etc. -->
+</resources>
+
+

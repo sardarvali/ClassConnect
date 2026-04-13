@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>>>>>>> final
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+<<<<<<< HEAD
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="20dp">
+=======
+        android:paddingHorizontal="@dimen/space_5"
+        android:paddingBottom="@dimen/space_5">
+>>>>>>> final
+
+        <!-- Drag handle -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_drag_handle" />
+
+        <TextView
+<<<<<<< HEAD
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Class"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="16dp" />
+=======
+            style="@style/ClassConnect.Text.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_4"
+            android:text="@string/create_class" />
+>>>>>>> final
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_class_name"
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Class Name">
+<<<<<<< HEAD
+=======
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_class_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_subject"
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:hint="Subject"
+            android:layout_marginTop="10dp">
+=======
+            android:layout_marginTop="@dimen/space_3"
+            android:hint="Subject">
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:hint="Description"
+            android:layout_marginTop="10dp">
+=======
+            android:layout_marginTop="@dimen/space_3"
+            android:hint="Description">
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+<<<<<<< HEAD
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Color"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+=======
+            style="@style/ClassConnect.Text.SectionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            android:layout_marginBottom="@dimen/space_2"
+            android:text="Pick Color"
+            android:textColor="@color/text_secondary" />
+>>>>>>> final
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:orientation="horizontal">
+            <View android:id="@+id/color1" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="4dp" android:background="@drawable/ic_launcher_background" />
+            <View android:id="@+id/color2" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="4dp" />
+            <View android:id="@+id/color3" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="4dp" />
+            <View android:id="@+id/color4" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="4dp" />
+            <View android:id="@+id/color5" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="4dp" />
+            <View android:id="@+id/color6" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="4dp" />
+            <View android:id="@+id/color7" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="4dp" />
+            <View android:id="@+id/color8" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="4dp" />
+=======
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_2">
+
+            <View
+                android:id="@+id/color1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_launcher_background" />
+
+            <View
+                android:id="@+id/color2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/color3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/color4"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/color5"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/color6"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/color7"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="4dp" />
+
+            <View
+                android:id="@+id/color8"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="4dp" />
+>>>>>>> final
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_create"
+            style="@style/ClassConnect.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:text="Create"
+            android:layout_marginTop="20dp" />
+=======
+            android:layout_marginTop="@dimen/space_5"
+            android:text="@string/create_class" />
+>>>>>>> final
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+=======
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+>>>>>>> final
+    </LinearLayout>
+</ScrollView>

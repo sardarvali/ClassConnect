@@ -1,0 +1,68 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+keystore.properties
+*.jks
+app/google-services.json
+build_out.txt
+build_err.txt
+
+
+
+# Secrets & Firebase
+firebase.json
+.firebaserc
+firestore.indexes.json
+google-services.json
+
+# IDE & tools
+.idea/
+.claude/
+.kotlin/
+*.iml
+
+# Build outputs
+app/release/
+build_result.txt
+
+# Misc
+project_structure.txt
+local.properties
+local.properties.example
+PUSH_FINAL_CODE.sh
+EXECUTE_PUSH.sh
+
+# Secrets & Firebase
+firebase.json
+.firebaserc
+firestore.indexes.json
+google-services.json
+
+# IDE & tools
+.idea/
+.claude/
+.kotlin/
+*.iml
+
+# Build outputs
+app/release/
+build_result.txt
+
+# Misc
+project_structure.txt
+local.properties
+local.properties.example
+PUSH_FINAL_CODE.sh
+EXECUTE_PUSH.sh

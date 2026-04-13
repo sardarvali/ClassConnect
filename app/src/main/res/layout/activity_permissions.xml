@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+<<<<<<< HEAD
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+=======
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+>>>>>>> final
+    android:padding="24dp">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.3" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+<<<<<<< HEAD
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/app_name" />
+=======
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher_foreground" />
+>>>>>>> final
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:text="@string/permissions_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="16dp" />
+=======
+        android:layout_marginTop="16dp"
+        android:text="@string/permissions_title"
+        android:textColor="@color/text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+>>>>>>> final
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:text="@string/permissions_subtitle"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="28dp" />
+=======
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="@string/permissions_subtitle"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+>>>>>>> final
+
+    <!-- Permission cards -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/permissionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Notifications -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+<<<<<<< HEAD
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/bg_surface"
+                app:strokeColor="@color/border_subtle"
+                app:strokeWidth="1dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+=======
+                android:clickable="true"
+
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/bg_surface"
+                app:cardCornerRadius="14dp"
+                app:strokeColor="@color/border_subtle"
+                app:strokeWidth="1dp">
+>>>>>>> final
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+<<<<<<< HEAD
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+=======
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+>>>>>>> final
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+<<<<<<< HEAD
+                        android:src="@drawable/ic_notifications"
+                        android:padding="6dp"
+                        android:background="@drawable/bg_stat_icon"
+                        android:backgroundTint="@color/semantic_info_surface"
+=======
+                        android:background="@drawable/bg_stat_icon"
+                        android:backgroundTint="@color/semantic_info_surface"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_notifications"
+>>>>>>> final
+                        app:tint="@color/brand_primary" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+<<<<<<< HEAD
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+=======
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+>>>>>>> final
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perm_notifications_title"
+<<<<<<< HEAD
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+=======
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+>>>>>>> final
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+<<<<<<< HEAD
+                            android:text="@string/perm_notifications_desc"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="2dp" />
+=======
+                            android:layout_marginTop="2dp"
+                            android:text="@string/perm_notifications_desc"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+>>>>>>> final
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statusNotifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/permissions_denied"
+<<<<<<< HEAD
+                        android:textSize="12sp"
+                        android:textColor="@color/semantic_warning" />
+=======
+                        android:textColor="@color/semantic_warning"
+                        android:textSize="12sp" />
+>>>>>>> final
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Camera -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+<<<<<<< HEAD
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/bg_surface"
+                app:strokeColor="@color/border_subtle"
+                app:strokeWidth="1dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+=======
+                android:clickable="true"
+
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/bg_surface"
+                app:cardCornerRadius="14dp"
+                app:strokeColor="@color/border_subtle"
+                app:strokeWidth="1dp">
+>>>>>>> final
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+<<<<<<< HEAD
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+=======
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+>>>>>>> final
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+<<<<<<< HEAD
+                        android:src="@drawable/ic_camera"
+                        android:padding="6dp"
+                        android:background="@drawable/bg_stat_icon"
+                        android:backgroundTint="@color/semantic_success_surface"
+=======
+                        android:background="@drawable/bg_stat_icon"
+                        android:backgroundTint="@color/semantic_success_surface"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_camera"
+>>>>>>> final
+                        app:tint="@color/semantic_success" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+<<<<<<< HEAD
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+=======
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+>>>>>>> final
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perm_camera_title"
+<<<<<<< HEAD
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+=======
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+>>>>>>> final
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+<<<<<<< HEAD
+                            android:text="@string/perm_camera_desc"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="2dp" />
+=======
+                            android:layout_marginTop="2dp"
+                            android:text="@string/perm_camera_desc"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+>>>>>>> final
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statusCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/permissions_denied"
+<<<<<<< HEAD
+                        android:textSize="12sp"
+                        android:textColor="@color/semantic_warning" />
+=======
+                        android:textColor="@color/semantic_warning"
+                        android:textSize="12sp" />
+>>>>>>> final
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Bluetooth -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardBluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+<<<<<<< HEAD
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/bg_surface"
+                app:strokeColor="@color/border_subtle"
+                app:strokeWidth="1dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+=======
+                android:clickable="true"
+
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/bg_surface"
+                app:cardCornerRadius="14dp"
+                app:strokeColor="@color/border_subtle"
+                app:strokeWidth="1dp">
+>>>>>>> final
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+<<<<<<< HEAD
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+=======
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+>>>>>>> final
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+<<<<<<< HEAD
+                        android:src="@drawable/ic_bluetooth"
+                        android:padding="6dp"
+                        android:background="@drawable/bg_stat_icon"
+                        android:backgroundTint="#1AA855F7"
+                        app:tint="#A855F7" />
+=======
+                        android:background="@drawable/bg_stat_icon"
+                        android:backgroundTint="@color/role_admin_surface"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_bluetooth"
+                        app:tint="@color/premium_tint_purple" />
+>>>>>>> final
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+<<<<<<< HEAD
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+=======
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+>>>>>>> final
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perm_bluetooth_title"
+<<<<<<< HEAD
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+=======
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+>>>>>>> final
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+<<<<<<< HEAD
+                            android:text="@string/perm_bluetooth_desc"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="2dp" />
+=======
+                            android:layout_marginTop="2dp"
+                            android:text="@string/perm_bluetooth_desc"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+>>>>>>> final
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statusBluetooth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/permissions_denied"
+<<<<<<< HEAD
+                        android:textSize="12sp"
+                        android:textColor="@color/semantic_warning" />
+=======
+                        android:textColor="@color/semantic_warning"
+                        android:textSize="12sp" />
+>>>>>>> final
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Location -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+<<<<<<< HEAD
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/bg_surface"
+                app:strokeColor="@color/border_subtle"
+                app:strokeWidth="1dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+=======
+                android:clickable="true"
+
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/bg_surface"
+                app:cardCornerRadius="14dp"
+                app:strokeColor="@color/border_subtle"
+                app:strokeWidth="1dp">
+>>>>>>> final
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+<<<<<<< HEAD
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+=======
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+>>>>>>> final
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+<<<<<<< HEAD
+                        android:src="@drawable/ic_location"
+                        android:padding="6dp"
+                        android:background="@drawable/bg_stat_icon"
+                        android:backgroundTint="@color/semantic_warning_surface"
+=======
+                        android:background="@drawable/bg_stat_icon"
+                        android:backgroundTint="@color/semantic_warning_surface"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_location"
+>>>>>>> final
+                        app:tint="@color/semantic_warning" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+<<<<<<< HEAD
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+=======
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+>>>>>>> final
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/perm_location_title"
+<<<<<<< HEAD
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+=======
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+>>>>>>> final
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+<<<<<<< HEAD
+                            android:text="@string/perm_location_desc"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary"
+                            android:layout_marginTop="2dp" />
+=======
+                            android:layout_marginTop="2dp"
+                            android:text="@string/perm_location_desc"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+>>>>>>> final
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/statusLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/permissions_denied"
+<<<<<<< HEAD
+                        android:textSize="12sp"
+                        android:textColor="@color/semantic_warning" />
+=======
+                        android:textColor="@color/semantic_warning"
+                        android:textSize="12sp" />
+>>>>>>> final
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Continue button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+<<<<<<< HEAD
+        android:text="@string/permissions_continue"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+=======
+        android:layout_marginTop="16dp"
+        android:text="@string/permissions_continue"
+        android:textSize="16sp"
+>>>>>>> final
+        app:cornerRadius="14dp" />
+
+</LinearLayout>
+

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> final
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+<<<<<<< HEAD
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+=======
+        style="@style/ClassConnect.Dialog.Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+>>>>>>> final
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Question">
+<<<<<<< HEAD
+=======
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:hint="Option A"
+            android:layout_marginTop="10dp">
+=======
+            android:layout_marginTop="10dp"
+            android:hint="Option A">
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_option_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:hint="Option B"
+            android:layout_marginTop="10dp">
+=======
+            android:layout_marginTop="10dp"
+            android:hint="Option B">
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_option_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:hint="Option C"
+            android:layout_marginTop="10dp">
+=======
+            android:layout_marginTop="10dp"
+            android:hint="Option C">
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_option_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:hint="Option D"
+            android:layout_marginTop="10dp">
+=======
+            android:layout_marginTop="10dp"
+            android:hint="Option D">
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_option_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<<<<<<< HEAD
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct Answer"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_hint"
+            android:letterSpacing="0.08"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+=======
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Marks">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_marks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:letterSpacing="0.08"
+            android:text="Correct Answer"
+            android:textColor="@color/text_hint"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+>>>>>>> final
+
+        <RadioGroup
+            android:id="@+id/rg_correct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_a"
+<<<<<<< HEAD
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="A"
+                android:textColor="@color/text_primary"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="B"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rb_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C"
+                android:textColor="@color/text_primary" />
+
+            <RadioButton
+                android:id="@+id/rb_d"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="D"
+                android:textColor="@color/text_primary" />
+=======
+                style="@style/ClassConnect.Radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="A" />
+
+            <RadioButton
+                android:id="@+id/rb_b"
+                style="@style/ClassConnect.Radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="B" />
+
+            <RadioButton
+                android:id="@+id/rb_c"
+                style="@style/ClassConnect.Radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C" />
+
+            <RadioButton
+                android:id="@+id/rb_d"
+                style="@style/ClassConnect.Radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="D" />
+>>>>>>> final
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>

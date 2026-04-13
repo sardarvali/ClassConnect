@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> final
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+<<<<<<< HEAD
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:layoutAnimation="@anim/layout_animation_from_bottom"
+=======
+        android:clipToPadding="false"
+        android:layoutAnimation="@anim/layout_animation_from_bottom"
+        android:paddingHorizontal="@dimen/space_2"
+        android:paddingTop="@dimen/space_3"
+        android:paddingBottom="@dimen/space_2"
+>>>>>>> final
+        app:layout_constraintBottom_toTopOf="@id/layout_suggestions"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/layout_suggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:paddingHorizontal="8dp"
+=======
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/space_3"
+        android:paddingBottom="@dimen/space_1"
+        android:scrollbars="none"
+>>>>>>> final
+        app:layout_constraintBottom_toTopOf="@id/input_card">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+<<<<<<< HEAD
+            android:paddingVertical="8dp">
+=======
+            android:paddingVertical="@dimen/space_2">
+>>>>>>> final
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                style="@style/ClassConnect.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:layout_marginEnd="6dp"
+                android:text="Explain this concept" />
+=======
+                android:layout_marginEnd="@dimen/space_2"
+                android:text="@string/ai_chip_explain" />
+>>>>>>> final
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/ClassConnect.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:layout_marginEnd="6dp"
+                android:text="Practice questions" />
+=======
+                android:layout_marginEnd="@dimen/space_2"
+                android:text="@string/ai_chip_practice" />
+>>>>>>> final
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/ClassConnect.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:layout_marginEnd="6dp"
+                android:text="Summarize notes" />
+=======
+                android:layout_marginEnd="@dimen/space_2"
+                android:text="@string/ai_chip_summarize" />
+>>>>>>> final
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/ClassConnect.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:text="Study tips" />
+=======
+                android:text="@string/ai_chip_tips" />
+>>>>>>> final
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Input bar wrapped in card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/input_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/bg_surface"
+        app:strokeColor="@color/border_default"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+=======
+        android:layout_marginHorizontal="@dimen/space_3"
+        android:layout_marginBottom="@dimen/space_2"
+        app:cardBackgroundColor="@color/bg_surface"
+        app:cardCornerRadius="@dimen/radius_xlarge"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="@color/border_default"
+        app:strokeWidth="1dp">
+>>>>>>> final
+
+        <LinearLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+<<<<<<< HEAD
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp">
+=======
+            android:paddingHorizontal="@dimen/space_3"
+            android:paddingVertical="@dimen/space_1">
+>>>>>>> final
+
+            <ImageButton
+                android:id="@+id/btn_clear"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+<<<<<<< HEAD
+                android:src="@drawable/ic_delete"
+                android:padding="6dp"
+=======
+                android:contentDescription="@string/delete"
+                android:padding="6dp"
+                android:src="@drawable/ic_delete"
+>>>>>>> final
+                app:tint="@color/text_hint" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+<<<<<<< HEAD
+                android:hint="Ask anything..."
+                android:textColorHint="@color/text_hint"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:maxLines="3"
+                android:paddingHorizontal="8dp" />
+=======
+                android:gravity="top|start"
+                android:hint="@string/ask_anything"
+                android:maxLines="3"
+                android:minHeight="48dp"
+                android:paddingHorizontal="@dimen/space_2"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:textSize="14sp" />
+>>>>>>> final
+
+            <ImageButton
+                android:id="@+id/btn_voice"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+<<<<<<< HEAD
+                android:src="@drawable/ic_mic"
+                android:padding="6dp"
+=======
+                android:contentDescription="@string/ai_voice_input"
+                android:padding="6dp"
+                android:src="@drawable/ic_mic"
+>>>>>>> final
+                app:tint="@color/brand_primary" />
+
+            <ImageButton
+                android:id="@+id/btn_send"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+<<<<<<< HEAD
+                android:src="@drawable/ic_send"
+                android:background="@drawable/bg_brand_button"
+                app:tint="@color/white"
+                android:padding="10dp" />
+=======
+                android:background="@drawable/bg_brand_button"
+                android:contentDescription="@string/submit"
+                android:padding="10dp"
+                android:src="@drawable/ic_send"
+                app:tint="@color/white" />
+>>>>>>> final
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/input_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<<<<<<< HEAD
+=======
+    <!-- FAB: share/use last AI response -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_use_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_3"
+        android:layout_marginBottom="@dimen/space_2"
+        android:text="@string/ai_use_response"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:icon="@drawable/ic_ai"
+        app:layout_constraintBottom_toTopOf="@id/layout_suggestions"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+>>>>>>> final
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Horizontal card slide-in from end for horizontal RecyclerViews -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@interpolator/ease_out_cubic">
+    <translate
+        android:fromXDelta="40%"
+        android:toXDelta="0%"
+        android:duration="400"/>
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="350"/>
+    <scale
+        android:fromXScale="0.9"
+        android:toXScale="1.0"
+        android:fromYScale="0.9"
+        android:toYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="400"/>
+=======
+<?xml version="1.0" encoding="utf-8"?><!-- Horizontal card slide-in from end for horizontal RecyclerViews -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@interpolator/ease_out_cubic">
+    <translate
+        android:duration="400"
+        android:fromXDelta="40%"
+        android:toXDelta="0%" />
+    <alpha
+        android:duration="350"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+    <scale
+        android:duration="400"
+        android:fromXScale="0.9"
+        android:fromYScale="0.9"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+>>>>>>> final
+</set>
+

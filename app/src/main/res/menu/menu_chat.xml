@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_chat_members"
+<<<<<<< HEAD
+        android:title="@string/chat_members"
+        android:icon="@drawable/ic_people"
+=======
+        android:icon="@drawable/ic_people"
+        android:title="@string/chat_members"
+>>>>>>> final
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_chat_mute"
+<<<<<<< HEAD
+        android:title="@string/chat_mute_notifications"
+        android:icon="@drawable/ic_bell"
+=======
+        android:icon="@drawable/ic_bell"
+        android:title="@string/chat_mute_notifications"
+>>>>>>> final
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_chat_search"
+<<<<<<< HEAD
+        android:title="@string/chat_search_messages"
+        android:icon="@drawable/ic_search"
+=======
+        android:icon="@drawable/ic_search"
+        android:title="@string/chat_search_messages"
+>>>>>>> final
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_chat_class_code"
+<<<<<<< HEAD
+        android:title="@string/chat_show_class_code"
+        android:icon="@drawable/ic_copy"
+=======
+        android:icon="@drawable/ic_copy"
+        android:title="@string/chat_show_class_code"
+>>>>>>> final
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_chat_clear"
+<<<<<<< HEAD
+        android:title="@string/chat_clear_messages"
+        android:icon="@drawable/ic_delete"
+=======
+        android:icon="@drawable/ic_delete"
+        android:title="@string/chat_clear_messages"
+>>>>>>> final
+        app:showAsAction="never" />
+
+</menu>
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base">
+
+    <!-- Background glow effect -->
+    <View
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/bg_glow_blue"
+        android:alpha="0.6"/>
+
+    <LinearLayout
+        android:id="@+id/splash_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Lottie animation -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_splash"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/email_sending"
+            app:lottie_speed="1.2"/>
+
+        <!-- App name -->
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="16dp"
+            android:alpha="0"/>
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/tv_tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_tagline"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="6dp"
+            android:alpha="0"/>
+    </LinearLayout>
+
+    <!-- Version at bottom -->
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:text="Version 1.0.0"
+        android:textSize="12sp"
+        android:textColor="@color/text_hint"
+        android:alpha="0"/>
+
+=======
+    android:id="@+id/splash_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background">
+
+    <com.syed.classconnect.ui.splash.NeuralBackgroundView
+        android:id="@+id/neural_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.syed.classconnect.ui.splash.ParticleBurstView
+        android:id="@+id/particle_burst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/logo_view"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="CC"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.5"
+            android:text="CLASSCONNECT"
+            android:textAllCaps="true"
+            android:textColor="@color/splash_light_purple"
+            android:textSize="11sp"
+            android:layout_marginTop="0dp" />
+
+        <FrameLayout
+            android:id="@+id/loader_container"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center_horizontal">
+
+            <View
+                android:id="@+id/loader_track"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:id="@+id/loader_fill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/role_chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/chip_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:alpha="0"
+                android:letterSpacing="0.08"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:text="ADMIN"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:translationY="8dp" />
+
+            <TextView
+                android:id="@+id/chip_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:alpha="0"
+                android:letterSpacing="0.08"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:text="TEACHER"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:translationY="8dp" />
+
+            <TextView
+                android:id="@+id/chip_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:letterSpacing="0.08"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:text="STUDENT"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:translationY="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+>>>>>>> final
+</FrameLayout>

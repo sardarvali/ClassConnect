@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing scale (4dp base) -->
+    <dimen name="space_1">4dp</dimen>
+    <dimen name="space_2">8dp</dimen>
+    <dimen name="space_3">12dp</dimen>
+    <dimen name="space_4">16dp</dimen>
+    <dimen name="space_5">20dp</dimen>
+    <dimen name="space_6">24dp</dimen>
+    <dimen name="space_8">32dp</dimen>
+    <dimen name="space_10">40dp</dimen>
+    <dimen name="space_12">48dp</dimen>
+
+<<<<<<< HEAD
+=======
+    <!-- Nav bar -->
+    <dimen name="nav_margin_bottom">12dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+
+>>>>>>> final
+    <!-- Corner radii -->
+    <dimen name="radius_small">8dp</dimen>
+    <dimen name="radius_medium">14dp</dimen>
+    <dimen name="radius_large">20dp</dimen>
+    <dimen name="radius_xlarge">28dp</dimen>
+    <dimen name="radius_pill">100dp</dimen>
+    <dimen name="card_corner_radius">20dp</dimen>
+
+    <!-- Component heights -->
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="bottom_nav_height">64dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="avatar_size_small">32dp</dimen>
+    <dimen name="avatar_size_medium">48dp</dimen>
+    <dimen name="avatar_size_large">72dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_xs">11sp</dimen>
+    <dimen name="text_sm">13sp</dimen>
+    <dimen name="text_base">15sp</dimen>
+    <dimen name="text_md">17sp</dimen>
+    <dimen name="text_lg">20sp</dimen>
+    <dimen name="text_xl">24sp</dimen>
+    <dimen name="text_2xl">28sp</dimen>
+    <dimen name="text_3xl">32sp</dimen>
+
+    <!-- Screen padding -->
+    <dimen name="screen_padding_h">20dp</dimen>
+    <dimen name="screen_padding_v">16dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_padding">18dp</dimen>
+    <dimen name="card_margin_v">6dp</dimen>
+    <dimen name="card_margin_h">16dp</dimen>
+
+    <!-- Icon sizes -->
+    <dimen name="icon_sm">16dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+<<<<<<< HEAD
+</resources>
+
+=======
+
+    <dimen name="stroke_default">1dp</dimen>
+    <dimen name="stroke_focus">2dp</dimen>
+</resources>
+>>>>>>> final

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
+    <item android:id="@+id/studentHomeFragment" android:icon="@drawable/ic_home" android:title="@string/home"/>
+    <item android:id="@+id/classListFragment" android:icon="@drawable/ic_classes" android:title="@string/my_classes"/>
+    <item android:id="@+id/aiBuddyFragment" android:icon="@drawable/ic_ai" android:title="@string/ai_buddy"/>
+    <item android:id="@+id/notificationsFragment" android:icon="@drawable/ic_notifications" android:title="@string/notifications"/>
+    <item android:id="@+id/profileFragment" android:icon="@drawable/ic_profile" android:title="@string/profile"/>
+</menu>
+=======
+    <item
+        android:id="@+id/studentHomeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/classListFragment"
+        android:icon="@drawable/ic_classes"
+        android:title="@string/my_classes" />
+    <item
+        android:id="@+id/aiBuddyFragment"
+        android:icon="@drawable/ic_ai"
+        android:title="@string/ai_buddy" />
+    <item
+        android:id="@+id/notificationsFragment"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/notifications" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+</menu>
+>>>>>>> final

@@ -1,0 +1,42 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+<<<<<<< HEAD
+    // Institution files — authenticated users can read; 50MB max per upload
+=======
+>>>>>>> final
+    match /institutions/{instId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null
+        && request.resource.size < 50 * 1024 * 1024
+        && (request.resource.contentType.matches('image/.*') ||
+            request.resource.contentType == 'application/pdf' ||
+            request.resource.contentType.matches('video/.*'));
+    }
+
+<<<<<<< HEAD
+    // Profile photos — any authenticated user can read; only owner can write
+=======
+>>>>>>> final
+    match /profile_photos/{uid} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null
+        && request.auth.uid == uid.replace('.jpg', '')
+        && request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+
+<<<<<<< HEAD
+    // Submissions — student can write own; teacher can read
+=======
+>>>>>>> final
+    match /submissions/{classId}/{assignmentId}/{studentId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null
+        && request.auth.uid == studentId
+        && request.resource.size < 50 * 1024 * 1024;
+    }
+  }
+}
+

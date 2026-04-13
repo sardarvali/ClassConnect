@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base">
+=======
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_premium"
+    android:fitsSystemWindows="false">
+>>>>>>> final
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/main_nav_host"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+<<<<<<< HEAD
+        android:paddingBottom="88dp"
+=======
+>>>>>>> final
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_main" />
+
+    <!-- Floating pill bottom nav -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bottom_nav_container"
+<<<<<<< HEAD
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="16dp"
+        app:cardBackgroundColor="@color/bg_surface"
+        app:strokeColor="@color/border_subtle"
+=======
+        style="@style/ClassConnect.Surface.Premium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/space_3"
+        android:layout_marginBottom="@dimen/nav_margin_bottom"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/radius_xlarge"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true"
+        app:strokeColor="@color/premium_glass_stroke"
+>>>>>>> final
+        app:strokeWidth="1dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+<<<<<<< HEAD
+            android:layout_height="64dp"
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_nav_student"
+            app:labelVisibilityMode="selected"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/bottom_nav_icon_color"
+            app:itemTextColor="@color/bottom_nav_icon_color"
+            app:itemActiveIndicatorStyle="@style/ClassConnect.BottomNav.ActiveIndicator" />
+=======
+            android:layout_height="@dimen/bottom_nav_height"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="@dimen/space_2"
+            app:itemActiveIndicatorStyle="@style/ClassConnect.BottomNav.ActiveIndicator"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/bottom_nav_icon_color"
+            app:itemTextColor="@color/bottom_nav_icon_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav_student" />
+>>>>>>> final
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Biometric lock overlay -->
+    <FrameLayout
+        android:id="@+id/biometric_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+<<<<<<< HEAD
+        android:background="@color/bg_base"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:elevation="100dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_lock"
+                app:tint="@color/brand_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/biometric_auth_subtitle"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+=======
+        android:background="@color/scrim"
+        android:clickable="true"
+        android:elevation="100dp"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/ClassConnect.Surface.Premium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/space_6"
+            app:cardCornerRadius="@dimen/radius_xlarge"
+            app:cardElevation="6dp"
+            app:strokeColor="@color/premium_glass_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/space_8">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/bg_logo_circle"
+                    android:contentDescription="@string/biometric_title"
+                    android:padding="18dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_lock"
+                    app:tint="@color/brand_primary" />
+
+                <TextView
+                    style="@style/ClassConnect.Text.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:text="@string/app_name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/ClassConnect.Text.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:gravity="center"
+                    android:text="@string/biometric_auth_subtitle" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+>>>>>>> final
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> final
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+<<<<<<< HEAD
+        android:layout_height="wrap_content">
+=======
+        android:layout_height="wrap_content"
+        android:background="@color/bg_base"
+        android:elevation="0dp">
+>>>>>>> final
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_layout"
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:layout_margin="8dp"
+=======
+            android:layout_marginHorizontal="@dimen/space_3"
+            android:layout_marginTop="@dimen/space_3"
+            android:layout_marginBottom="@dimen/space_2"
+>>>>>>> final
+            app:startIconDrawable="@drawable/ic_people">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:hint="Search users..."
+                android:inputType="text"
+                android:imeOptions="actionSearch" />
+=======
+                android:hint="@string/search_users_hint"
+                android:imeOptions="actionSearch"
+                android:inputType="text" />
+>>>>>>> final
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            app:tabMode="fixed"
+            app:tabGravity="fill">
+=======
+            android:background="@color/bg_base"
+            android:paddingHorizontal="@dimen/space_2"
+            app:tabGravity="fill"
+            app:tabIndicator="@drawable/bg_tab_indicator_pill"
+            app:tabIndicatorHeight="34dp"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/ClassConnect.Tab"
+            app:tabSelectedTextColor="@color/text_on_brand"
+            app:tabTextColor="@color/text_secondary">
+>>>>>>> final
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_pending" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_admins" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_teachers" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_students" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_users"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+<<<<<<< HEAD
+            android:paddingBottom="8dp"
+            android:layoutAnimation="@anim/layout_animation_stagger"
+=======
+            android:layoutAnimation="@anim/layout_animation_stagger"
+            android:paddingBottom="8dp"
+>>>>>>> final
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/empty_state"
+<<<<<<< HEAD
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp"
+=======
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/space_8"
+>>>>>>> final
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+<<<<<<< HEAD
+                android:src="@drawable/ic_people"
+                android:alpha="0.4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="No users found"
+                android:textSize="18sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Users will appear here once they register"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center" />
+=======
+                android:alpha="0.45"
+                android:contentDescription="@string/no_users_found"
+                android:src="@drawable/ic_people"
+                app:tint="@color/brand_primary" />
+
+            <TextView
+                style="@style/ClassConnect.Text.EmptyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4"
+                android:text="@string/no_users_found"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                style="@style/ClassConnect.Text.EmptyBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_2"
+                android:gravity="center"
+                android:text="@string/users_register_hint"
+                android:textColor="@color/text_secondary" />
+>>>>>>> final
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> final
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="vertical"
+<<<<<<< HEAD
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="3dp">
+=======
+    android:paddingHorizontal="@dimen/space_3"
+    android:paddingVertical="@dimen/space_1">
+>>>>>>> final
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:cardBackgroundColor="@color/brand_primary"
+<<<<<<< HEAD
+        app:cardCornerRadius="18dp"
+        app:cardElevation="0dp"
+=======
+        app:cardCornerRadius="@dimen/radius_medium"
+>>>>>>> final
+        app:strokeWidth="0dp">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:maxWidth="260dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2dp" />
+=======
+            android:lineSpacingExtra="2dp"
+            android:maxWidth="280dp"
+            android:padding="@dimen/space_3"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+>>>>>>> final
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

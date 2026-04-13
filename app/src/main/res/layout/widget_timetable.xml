@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+<<<<<<< HEAD
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/bg_surface">
+=======
+    android:background="@color/bg_surface"
+    android:orientation="vertical"
+    android:padding="16dp">
+>>>>>>> final
+
+    <TextView
+        android:id="@+id/tv_widget_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today's Classes"
+<<<<<<< HEAD
+        android:textStyle="bold"
+        android:textColor="@color/brand_primary"
+        android:textSize="14sp" />
+=======
+        android:textColor="@color/brand_primary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+>>>>>>> final
+
+    <TextView
+        android:id="@+id/tv_widget_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:text="No classes today"
+        android:textColor="@color/text_primary"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp" />
+=======
+        android:layout_marginTop="4dp"
+        android:text="No classes today"
+        android:textColor="@color/text_primary"
+        android:textSize="12sp" />
+>>>>>>> final
+
+</LinearLayout>
+
+
+

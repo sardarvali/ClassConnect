@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+<<<<<<< HEAD
+    android:fillViewport="true"
+    android:background="@color/bg_base">
+=======
+    android:background="@color/bg_base"
+    android:fillViewport="true">
+>>>>>>> final
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp">
+=======
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/space_8">
+>>>>>>> final
+
+        <!-- Lottie animation -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_email"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+<<<<<<< HEAD
+            android:layout_marginTop="32dp"
+            app:lottie_rawRes="@raw/email_sending"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_verify_heading"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="24dp" />
+=======
+            android:layout_marginTop="@dimen/space_8"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/email_sending" />
+
+        <!-- Heading -->
+        <TextView
+            style="@style/ClassConnect.Text.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_6"
+            android:text="@string/email_verify_heading" />
+>>>>>>> final
+
+        <!-- Subtext -->
+        <TextView
+            android:id="@+id/tv_subtext"
+<<<<<<< HEAD
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email_verify_heading"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <!-- Email chip / highlighted card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/bg_surface_raised"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp">
+=======
+            style="@style/ClassConnect.Text.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_3"
+            android:gravity="center"
+            android:text="@string/email_verify_heading" />
+
+        <!-- Email chip / highlighted card -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/ClassConnect.Surface.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            app:cardBackgroundColor="@color/bg_surface_raised"
+            app:cardCornerRadius="@dimen/radius_xlarge"
+            app:cardElevation="0dp">
+
+>>>>>>> final
+            <TextView
+                android:id="@+id/tv_email_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/brand_primary" />
+=======
+                android:paddingHorizontal="@dimen/space_5"
+                android:paddingVertical="@dimen/space_2"
+                android:textColor="@color/brand_primary"
+                android:textSize="@dimen/text_base"
+                android:textStyle="bold" />
+>>>>>>> final
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Polling status -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="24dp">
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progress_polling"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                app:indicatorSize="20dp"
+                app:indicatorColor="@color/brand_primary"
+                app:trackThickness="2dp"
+                app:trackCornerRadius="2dp"
+                style="@style/Widget.Material3.CircularProgressIndicator.ExtraSmall" />
+=======
+            android:layout_marginTop="@dimen/space_6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progress_polling"
+                style="@style/Widget.Material3.CircularProgressIndicator.ExtraSmall"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/space_2"
+                app:indicatorColor="@color/brand_primary"
+                app:indicatorSize="20dp"
+                app:trackCornerRadius="2dp"
+                app:trackThickness="2dp" />
+
+>>>>>>> final
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verification_checking"
+<<<<<<< HEAD
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary" />
+=======
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_sm" />
+>>>>>>> final
+        </LinearLayout>
+
+        <!-- Open Email App button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_open_email_app"
+<<<<<<< HEAD
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_email_app"
+            android:layout_marginTop="32dp" />
+=======
+            style="@style/ClassConnect.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:text="@string/open_email_app" />
+>>>>>>> final
+
+        <!-- Resend Email button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_resend_email"
+<<<<<<< HEAD
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resend_email"
+            android:enabled="false"
+            android:layout_marginTop="8dp"
+            style="@style/ClassConnect.Button.Outlined" />
+=======
+            style="@style/ClassConnect.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:enabled="false"
+            android:text="@string/resend_email" />
+>>>>>>> final
+
+        <!-- Wrong email link -->
+        <TextView
+            android:id="@+id/tv_wrong_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:text="@string/wrong_email"
+            android:textColor="@color/brand_primary"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp" />
+=======
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_marginBottom="@dimen/space_8"
+            android:padding="@dimen/space_3"
+            android:text="@string/wrong_email"
+            android:textColor="@color/brand_primary"
+            android:textSize="@dimen/text_base" />
+>>>>>>> final
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
+    <item android:state_focused="true" android:color="@color/brand_primary"/>
+    <item android:state_hovered="true" android:color="@color/border_default"/>
+    <item android:state_enabled="false" android:color="@color/border_subtle"/>
+    <item android:color="@color/border_subtle"/>
+=======
+    <item android:color="@color/brand_primary" android:state_focused="true" />
+    <item android:color="@color/border_default" android:state_hovered="true" />
+    <item android:color="@color/border_subtle" android:state_enabled="false" />
+    <item android:color="@color/border_subtle" />
+>>>>>>> final
+</selector>
+

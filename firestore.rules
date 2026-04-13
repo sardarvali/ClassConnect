@@ -1,0 +1,175 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+<<<<<<< HEAD
+    // Users — any authenticated user can read; own user or admin can write
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null && (
+        request.auth.uid == userId ||
+        isAdmin()
+      );
+      allow delete: if isAdmin();
+    }
+
+    // Institutions — authenticated users can read; admin creates/updates/deletes
+    match /institutions/{instId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+        && request.resource.data.adminId == request.auth.uid;
+      allow update, delete: if request.auth != null
+        && resource.data.adminId == request.auth.uid;
+    }
+
+    // Classes — role-based access
+    match /classes/{classId} {
+      allow read: if request.auth != null && (
+        request.auth.uid in resource.data.studentIds ||
+        resource.data.teacherId == request.auth.uid ||
+        isAdmin()
+      );
+      allow create: if isTeacherOrAdmin();
+      allow update: if request.auth != null && (
+        resource.data.teacherId == request.auth.uid || isAdmin()
+      );
+      allow delete: if isAdmin();
+
+      // Announcements & Materials — teacher/admin write, members read
+=======
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null && (request.auth.uid == userId || isAdmin());
+      allow delete: if isAdmin();
+    }
+
+    match /institutions/{instId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.resource.data.adminId == request.auth.uid;
+      allow update, delete: if request.auth != null && resource.data.adminId == request.auth.uid;
+    }
+
+    match /classes/{classId} {
+      allow read: if request.auth != null;
+      allow create: if isTeacherOrAdmin();
+      allow update: if request.auth != null && (resource.data.teacherId == request.auth.uid || isAdmin() || isStudentJoining());
+      allow delete: if isAdmin();
+
+>>>>>>> final
+      match /announcements/{docId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow write: if isTeacherOrAdmin();
+      }
+
+      match /materials/{docId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow write: if isTeacherOrAdmin();
+      }
+
+<<<<<<< HEAD
+      // Assignments — teacher/admin create; submissions student-owned
+=======
+>>>>>>> final
+      match /assignments/{assignmentId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow create, update, delete: if isTeacherOrAdmin();
+
+        match /submissions/{studentId} {
+          allow read: if request.auth.uid == studentId || isTeacherOrAdmin();
+          allow create, update: if request.auth.uid == studentId || isTeacherOrAdmin();
+          allow delete: if isTeacherOrAdmin();
+        }
+      }
+
+<<<<<<< HEAD
+      // Quizzes — teacher creates; students attempt
+=======
+>>>>>>> final
+      match /quizzes/{quizId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow create, update, delete: if isTeacherOrAdmin();
+
+        match /attempts/{studentId} {
+          allow read: if request.auth.uid == studentId || isTeacherOrAdmin();
+<<<<<<< HEAD
+          // Student can CREATE an attempt only if one doesn't already exist
+          allow create: if request.auth.uid == studentId;
+          // Student can UPDATE only their own attempt
+=======
+          allow create: if request.auth.uid == studentId;
+>>>>>>> final
+          allow update: if request.auth.uid == studentId;
+          allow delete: if isTeacherOrAdmin();
+        }
+      }
+
+<<<<<<< HEAD
+      // Attendance — teacher creates sessions; students mark present
+      match /attendance/{date} {
+        allow read: if isMemberOrTeacher(classId);
+        allow create: if isTeacherOrAdmin();
+        allow update: if request.auth != null; // students update present list
+        allow delete: if isTeacherOrAdmin();
+      }
+
+      // Chat — all members read/create; only sender or teacher can update/delete
+=======
+      match /attendance/{date} {
+        allow read: if isMemberOrTeacher(classId);
+        allow create: if isTeacherOrAdmin();
+        allow update: if request.auth != null;
+        allow delete: if isTeacherOrAdmin();
+      }
+
+>>>>>>> final
+      match /chat/{messageId} {
+        allow read: if isMemberOrTeacher(classId);
+        allow create: if request.auth != null;
+        allow update: if request.auth.uid == resource.data.senderId || isTeacherOrAdmin();
+        allow delete: if request.auth.uid == resource.data.senderId || isTeacherOrAdmin();
+      }
+    }
+
+<<<<<<< HEAD
+    // Notifications — user owns their own notifications
+=======
+>>>>>>> final
+    match /notifications/{userId}/items/{notifId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+<<<<<<< HEAD
+    // Helper functions
+=======
+>>>>>>> final
+    function isAdmin() {
+      return request.auth != null &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    function isTeacherOrAdmin() {
+      let role = get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+      return request.auth != null && (role == 'teacher' || role == 'admin');
+    }
+
+    function isMemberOrTeacher(classId) {
+      let cls = get(/databases/$(database)/documents/classes/$(classId)).data;
+      return request.auth != null && (
+        request.auth.uid in cls.studentIds ||
+        cls.teacherId == request.auth.uid ||
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin'
+      );
+    }
+<<<<<<< HEAD
+=======
+
+    function isStudentJoining() {
+      // allow update if the only change is adding themselves to studentIds
+      return request.auth != null &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(['studentIds']);
+    }
+>>>>>>> final
+  }
+}

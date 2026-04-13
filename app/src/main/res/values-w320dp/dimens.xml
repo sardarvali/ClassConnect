@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Small screen dimensions (phones < 5 inches, 320dp width) -->
+    <dimen name="screen_padding_h_default">16dp</dimen>
+    <dimen name="screen_padding_h_compact">12dp</dimen>
+    <dimen name="card_padding_comfortable">16dp</dimen>
+    <dimen name="screen_padding_v_comfortable">16dp</dimen>
+</resources>
+

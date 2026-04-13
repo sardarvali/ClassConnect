@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> final
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_base">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+<<<<<<< HEAD
+        android:padding="20dp">
+=======
+        android:padding="@dimen/screen_padding_h">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/ClassConnect.Surface.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_4"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_premium_header"
+                android:orientation="vertical"
+                android:padding="@dimen/space_4">
+
+                <TextView
+                    style="@style/ClassConnect.Text.SectionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_quiz_title" />
+
+                <TextView
+                    style="@style/ClassConnect.Text.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_1"
+                    android:text="@string/create_quiz_subtitle" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+>>>>>>> final
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:hint="Quiz Title">
+=======
+            android:hint="@string/quiz_title_hint">
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:hint="Description"
+            android:layout_marginTop="10dp">
+=======
+            android:layout_marginTop="@dimen/space_2"
+            android:hint="@string/quiz_description_hint">
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ClassConnect.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:hint="Duration (minutes)"
+            android:layout_marginTop="10dp">
+=======
+            android:layout_marginTop="@dimen/space_2"
+            android:hint="@string/quiz_duration_hint">
+
+>>>>>>> final
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.card.MaterialCardView
+<<<<<<< HEAD
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/bg_surface"
+=======
+            style="@style/ClassConnect.Surface.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            app:cardBackgroundColor="@color/bg_surface"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+>>>>>>> final
+            app:strokeColor="@color/border_subtle"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_quiz"
+                    app:tint="@color/brand_primary"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_question_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0 question(s) added"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+=======
+                android:orientation="vertical"
+                android:padding="@dimen/space_3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_schedule_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_base"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_schedule_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_1"
+                    android:text="@string/quiz_schedule_empty"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_sm" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_3"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_start"
+                        style="@style/ClassConnect.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:text="@string/quiz_start_time"
+                        app:icon="@drawable/ic_calendar"
+                        app:iconGravity="start" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_end"
+                        style="@style/ClassConnect.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:text="@string/quiz_end_time"
+                        app:icon="@drawable/ic_calendar"
+                        app:iconGravity="start" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_clear_schedule"
+                    style="@style/ClassConnect.Button.Outlined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:text="@string/quiz_clear_schedule" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/ClassConnect.Surface.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_4"
+            app:cardBackgroundColor="@color/bg_surface"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:strokeColor="@color/border_subtle"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/tv_question_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/space_3"
+                android:gravity="center_vertical"
+                android:padding="@dimen/space_3"
+                android:text="@string/quiz_question_count_added"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_base"
+                app:drawableStartCompat="@drawable/ic_quiz"
+                app:drawableTint="@color/brand_primary" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_question_helper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:text="@string/quiz_question_helper"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_sm" />
+
+>>>>>>> final
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_question"
+            style="@style/ClassConnect.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:text="Add Question"
+            android:layout_marginTop="12dp"
+            app:icon="@drawable/ic_add"
+            app:iconGravity="start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+=======
+            android:layout_marginTop="@dimen/space_3"
+            android:text="@string/add_question"
+            app:icon="@drawable/ic_add"
+            app:iconGravity="start" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ai_suggest"
+            style="@style/ClassConnect.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:text="@string/btn_ai_suggestions"
+            app:icon="@drawable/ic_ai"
+            app:iconGravity="start" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_1"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:orientation="horizontal">
+>>>>>>> final
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save_draft"
+                style="@style/ClassConnect.Button.Outlined"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:layout_weight="1"
+                android:text="Save Draft"
+                android:layout_marginEnd="4dp" />
+=======
+                android:layout_marginEnd="@dimen/space_1"
+                android:layout_weight="1"
+                android:text="@string/quiz_save_draft" />
+>>>>>>> final
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_publish"
+                style="@style/ClassConnect.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+<<<<<<< HEAD
+                android:text="Publish" />
+=======
+                android:text="@string/action_publish" />
+>>>>>>> final
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

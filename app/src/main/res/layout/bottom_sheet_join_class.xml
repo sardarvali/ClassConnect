@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> final
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+<<<<<<< HEAD
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="20dp">
+=======
+    android:paddingHorizontal="@dimen/space_5"
+    android:paddingBottom="@dimen/space_5">
+>>>>>>> final
+
+    <!-- Drag handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_drag_handle" />
+
+    <TextView
+<<<<<<< HEAD
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join a Class"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="16dp" />
+=======
+        style="@style/ClassConnect.Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_4"
+        android:text="@string/join_class" />
+>>>>>>> final
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_class_code"
+        style="@style/ClassConnect.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:hint="Class Code (6 characters)"
+        app:startIconDrawable="@drawable/ic_link"
+        app:startIconTint="@color/text_secondary">
+=======
+        android:hint="@string/join_class_code_hint"
+        app:startIconDrawable="@drawable/ic_link"
+        app:startIconTint="@color/text_secondary">
+
+>>>>>>> final
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_class_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+<<<<<<< HEAD
+            android:maxLength="6"
+            android:letterSpacing="0.3" />
+=======
+            android:letterSpacing="0.3"
+            android:maxLength="6" />
+>>>>>>> final
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Class preview card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layout_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/bg_surface_raised"
+=======
+        android:layout_marginTop="@dimen/space_3"
+        android:visibility="gone"
+        style="@style/ClassConnect.Surface.Section"
+        app:cardBackgroundColor="@color/premium_surface_tint"
+        app:cardCornerRadius="@dimen/radius_large"
+>>>>>>> final
+        app:strokeColor="@color/border_subtle"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+<<<<<<< HEAD
+            android:padding="14dp">
+
+            <TextView
+                android:id="@+id/tv_preview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+=======
+            android:padding="@dimen/space_4">
+
+            <TextView
+                android:id="@+id/tv_preview_name"
+                style="@style/ClassConnect.Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+>>>>>>> final
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tv_preview_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="4dp" />
+=======
+                android:layout_marginTop="@dimen/space_1"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_sm" />
+>>>>>>> final
+
+            <TextView
+                android:id="@+id/tv_preview_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="2dp" />
+=======
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_sm" />
+>>>>>>> final
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_join"
+        style="@style/ClassConnect.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:text="Join"
+        android:layout_marginTop="20dp" />
+=======
+        android:layout_marginTop="@dimen/space_5"
+        android:text="@string/join_class" />
+>>>>>>> final
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+=======
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+>>>>>>> final
+
+</LinearLayout>

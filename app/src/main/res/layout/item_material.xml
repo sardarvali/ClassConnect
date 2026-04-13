@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> final
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+<<<<<<< HEAD
+    app:cardElevation="0dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/bg_surface"
+    app:strokeColor="@color/border_subtle"
+    app:strokeWidth="1dp"
+    android:foreground="?attr/selectableItemBackground">
+=======
+
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/bg_surface"
+    app:cardCornerRadius="16dp"
+    app:strokeColor="@color/border_subtle"
+    app:strokeWidth="1dp">
+>>>>>>> final
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+=======
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+>>>>>>> final
+
+        <ImageView
+            android:id="@+id/iv_type_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+<<<<<<< HEAD
+            android:src="@drawable/ic_pdf"
+            android:layout_marginEnd="12dp"
+            android:background="@color/bg_surface_raised"
+            android:padding="8dp"/>
+=======
+            android:layout_marginEnd="12dp"
+            android:background="@color/bg_surface_raised"
+            android:padding="8dp"
+            android:src="@drawable/ic_pdf" />
+>>>>>>> final
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:text="Material Title"/>
+=======
+                android:text="Material Title"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+>>>>>>> final
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Description"/>
+=======
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Description"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+>>>>>>> final
+
+            <TextView
+                android:id="@+id/tv_uploaded_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:textSize="11sp"
+                android:textColor="@color/text_hint"
+                android:text="Uploaded by"/>
+=======
+                android:text="Uploaded by"
+                android:textColor="@color/text_hint"
+                android:textSize="11sp" />
+>>>>>>> final
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_open"
+<<<<<<< HEAD
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:textSize="12sp"
+            style="@style/ClassConnect.Button.Outlined"/>
+=======
+            style="@style/ClassConnect.Button.Outlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:textSize="12sp" />
+>>>>>>> final
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

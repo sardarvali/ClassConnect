@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> final
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+<<<<<<< HEAD
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/bg_surface"
+=======
+    android:layout_marginHorizontal="@dimen/space_4"
+    android:layout_marginVertical="@dimen/space_1"
+    app:cardBackgroundColor="@color/bg_surface"
+    app:cardCornerRadius="@dimen/radius_large"
+>>>>>>> final
+    app:strokeColor="@color/border_subtle"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+=======
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_3">
+>>>>>>> final
+
+        <ImageView
+            android:id="@+id/iv_role_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+<<<<<<< HEAD
+            android:src="@drawable/ic_arrow_forward"
+            android:contentDescription="@string/role_change_history"
+            android:layout_marginEnd="12dp" />
+=======
+            android:layout_marginEnd="@dimen/space_3"
+            android:contentDescription="@string/role_change_history"
+            android:src="@drawable/ic_arrow_forward" />
+>>>>>>> final
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_target_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+=======
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_base"
+                android:textStyle="bold"
+>>>>>>> final
+                tools:text="John Doe" />
+
+            <TextView
+                android:id="@+id/tv_role_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:textSize="13sp"
+                android:textColor="@color/brand_primary"
+                android:layout_marginTop="2dp"
+=======
+                android:layout_marginTop="@dimen/space_1"
+                android:textColor="@color/brand_primary"
+                android:textSize="@dimen/text_sm"
+>>>>>>> final
+                tools:text="Teacher → Student" />
+
+            <TextView
+                android:id="@+id/tv_changed_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="2dp"
+=======
+                android:layout_marginTop="@dimen/space_1"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_xs"
+>>>>>>> final
+                tools:text="By: Admin Name" />
+
+            <TextView
+                android:id="@+id/tv_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+<<<<<<< HEAD
+                android:textSize="12sp"
+                android:textColor="@color/text_hint"
+                android:layout_marginTop="2dp"
+=======
+                android:layout_marginTop="@dimen/space_1"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/text_xs"
+>>>>>>> final
+                android:visibility="gone"
+                tools:text="Reason: misconduct" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:textSize="11sp"
+            android:textColor="@color/text_hint"
+=======
+            android:layout_marginStart="@dimen/space_2"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/text_xs"
+>>>>>>> final
+            tools:text="2 hrs ago" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+

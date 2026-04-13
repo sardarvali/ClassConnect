@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tablet screen dimensions (600dp width) -->
+    <dimen name="screen_padding_h_default">40dp</dimen>
+    <dimen name="screen_padding_h_compact">32dp</dimen>
+    <dimen name="card_padding_comfortable">28dp</dimen>
+    <dimen name="screen_padding_v_comfortable">32dp</dimen>
+</resources>
+

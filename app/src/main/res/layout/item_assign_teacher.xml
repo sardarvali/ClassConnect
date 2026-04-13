@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+<<<<<<< HEAD
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+=======
+    android:layout_marginHorizontal="@dimen/space_3"
+    android:layout_marginVertical="@dimen/space_1"
+    android:background="@drawable/bg_rounded_16"
+    android:backgroundTint="@color/bg_surface"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_3">
+>>>>>>> final
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+<<<<<<< HEAD
+        android:src="@drawable/ic_profile"
+        android:layout_marginEnd="12dp"/>
+=======
+        android:layout_marginEnd="@dimen/space_3"
+        android:contentDescription="@string/user_avatar"
+        android:src="@drawable/ic_profile" />
+>>>>>>> final
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            tools:text="Jane Smith"/>
+=======
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_base"
+            android:textStyle="bold"
+            tools:text="Jane Smith" />
+>>>>>>> final
+
+        <TextView
+            android:id="@+id/tv_teacher_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+<<<<<<< HEAD
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            tools:text="jane@school.com"/>
+=======
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_sm"
+            tools:text="jane@school.com" />
+>>>>>>> final
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_class_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:textSize="12sp"
+        android:textColor="@color/text_hint"
+        tools:text="2 classes"/>
+=======
+        android:background="@drawable/bg_rounded_16"
+        android:backgroundTint="@color/semantic_info_surface"
+        android:paddingHorizontal="@dimen/space_2"
+        android:paddingVertical="@dimen/space_1"
+        android:textColor="@color/text_hint"
+        android:textSize="@dimen/text_xs"
+        tools:text="2 classes" />
+>>>>>>> final
+
+</LinearLayout>
+
