@@ -11,9 +11,9 @@
 
 ## Step 1 — Clone / Open the Project
 ```
-git clone <repo-url>
+git clone https://github.com/sardarvali/ClassConnect
 ```
-Open the `p2/` folder in Android Studio.
+Open the `project/` folder in Android Studio.
 
 ---
 
@@ -42,7 +42,7 @@ Open the `p2/` folder in Android Studio.
 6. Download `google-services.json`
 7. Place it in `app/` directory:
    ```
-   p2/app/google-services.json
+   project/app/google-services.json
    ```
 
 ---
